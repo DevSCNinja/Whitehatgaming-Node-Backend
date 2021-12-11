@@ -1,2 +1,9 @@
-# whitehatgaming-backend
-White Hat Gaming
+## Project setup
+```
+npm install
+```
+
+### Run
+```
+node server.js
+```
