@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
 require("./app/routes/casino.routes")(app);
 
 app.get('/*', (req, res) => {
-  res.sendFile(path + '/index.html');
+  res.sendFile(path + '/views/index.html');
 });
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
