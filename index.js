@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
-const path = __dirname + '/app/views/';
+const path = __dirname + '/app/my-app/';
 app.use(express.static(path));
 
 var corsOptions = {
@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
 require("./app/routes/casino.routes")(app);
 
 app.get('/*', (req, res) => {
-  res.sendFile(path + '/views/index.html');
+  res.sendFile(path + '/my-app/index.html');
 });
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
